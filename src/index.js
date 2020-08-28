@@ -1,15 +1,6 @@
-import _ from 'lodash';
-const module1 = require('./module1');
+const a = 'a';
+console.log(a);
 
-function component() {
-  const element = document.createElement('div');
-
-// Lodash, currently included via a script, is required for this line to work
-// Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-
-document.body.appendChild(component());
+const b = new Promise((resolve, reject) => {
+  resolve('success');
+});
